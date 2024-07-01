@@ -5,7 +5,8 @@
   "scripts": {
     "compile": "tsc",
     "start": "ts-node-dev --exit-child --watch src --poll src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "loadFixtures": "fixtures-ts-node-commonjs load ./src/fixtures --dataSource=./src/lib/datasource.fixtures.ts --sync"
   },
   "keywords": [],
   "author": "",
